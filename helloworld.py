@@ -5,7 +5,7 @@ import click
 @click.option('-c', '--case', type=click.Choice(['upper', 'lower']))
 @click.argument('person', default='you')
 def hello(case, person):
-    respone = "Hello World! Also, hey {} ".format(person)
+    respone = "Hello World! , hey {} ".format(person)
 
     if case == 'upper':
         click.echo(respone.upper())
